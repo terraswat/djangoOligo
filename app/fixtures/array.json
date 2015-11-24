@@ -1,0 +1,30 @@
+[
+{
+    "fields": {
+        "name": "D125DV", 
+        "descr": "D125DV descr"
+    }, 
+    "model": "app.array"
+},
+{
+    "fields": {
+        "name": "X355XD", 
+        "descr": "X355XD descr"
+    }, 
+    "model": "app.array"
+},
+{
+    "fields": {
+        "name": "G250GZ", 
+        "descr": "G250GZ descr"
+    }, 
+    "model": "app.array"
+},
+{
+    "fields": {
+        "name": "Z433ZT", 
+        "descr": "Z433ZT descr"
+    }, 
+    "model": "app.array"
+}
+]

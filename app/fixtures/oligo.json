@@ -1,0 +1,114 @@
+[
+{
+    "fields": {
+        "bestStart": "23456789", 
+        "family": "Alpha Satellite", 
+        "genomeBrowser": "/CAC", 
+        "bestEnd": "123456789", 
+        "chr": "10", 
+        "frequency": "0.33", 
+        "location": "location sf", 
+        "array": "D125DV", 
+        "primer": "CAC"
+    }, 
+    "model": "app.oligo"
+},
+{
+    "fields": {
+        "bestStart": "3456789", 
+        "family": "Beta Satellite", 
+        "genomeBrowser": "/CAG", 
+        "bestEnd": "23456789", 
+        "chr": "11", 
+        "frequency": "0.44", 
+        "location": "location sc", 
+        "array": "X355XD", 
+        "primer": "CAG"
+    }, 
+    "model": "app.oligo"
+},
+{
+    "fields": {
+        "bestStart": "45678912", 
+        "family": "Alpha Satellite", 
+        "genomeBrowser": "/CAT", 
+        "bestEnd": "345678912", 
+        "chr": "10", 
+        "frequency": "0.55", 
+        "location": "location sc", 
+        "array": "G250GZ", 
+        "primer": "CAT"
+    }, 
+    "model": "app.oligo"
+},
+{
+    "fields": {
+        "bestStart": "56789123", 
+        "family": "Alpha Satellite", 
+        "genomeBrowser": "/GAG", 
+        "bestEnd": "456789123", 
+        "chr": "11", 
+        "frequency": "0.11", 
+        "location": "location sf", 
+        "array": "D125DV", 
+        "primer": "GAG"
+    }, 
+    "model": "app.oligo"
+},
+{
+    "fields": {
+        "bestStart": "67891234", 
+        "family": "Beta Satellite", 
+        "genomeBrowser": "/GAT", 
+        "bestEnd": "567891234", 
+        "chr": "10", 
+        "frequency": "0.99", 
+        "location": "location sc", 
+        "array": "X355XD", 
+        "primer": "GAT"
+    }, 
+    "model": "app.oligo"
+},
+{
+    "fields": {
+        "bestStart": "78912345", 
+        "family": "Alpha Satellite", 
+        "genomeBrowser": "/TAC", 
+        "bestEnd": "678912345", 
+        "chr": "11", 
+        "frequency": "0.66", 
+        "location": "location sf", 
+        "array": "G250GZ", 
+        "primer": "TAC"
+    }, 
+    "model": "app.oligo"
+},
+{
+    "fields": {
+        "bestStart": "89123456", 
+        "family": "Alpha Satellite", 
+        "genomeBrowser": "/TAG", 
+        "bestEnd": "789123456", 
+        "chr": "11", 
+        "frequency": "0.88", 
+        "location": "location sc", 
+        "array": "D125DV", 
+        "primer": "TAG"
+    }, 
+    "model": "app.oligo"
+},
+{
+    "fields": {
+        "bestStart": "91234567", 
+        "family": "Beta Satellite", 
+        "genomeBrowser": "/TAT", 
+        "bestEnd": "891234567", 
+        "chr": "11", 
+        "frequency": "0.77", 
+        "location": "location sc", 
+        "array": "Z433ZT", 
+        "primer": "TAT"
+    }, 
+    "model": "app.oligo"
+}
+]

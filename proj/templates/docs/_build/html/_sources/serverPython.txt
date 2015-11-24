@@ -1,0 +1,28 @@
+Server Python Code
+===================
+
+The server code is in python making use of the django framework. There are
+application modules to handle the details of the HTTP requests, and project
+modules to handle the django settings.
+
+Application modules
+-------------------
+.. automodule:: app.models
+   :members:
+.. automodule:: app.admin
+   :members:
+.. automodule:: app.forms
+   :members:
+.. automodule:: app.views
+   :members:
+.. automodule:: app.urls
+   :members:
+.. automodule:: app.tests
+   :members:
+
+Project modules
+---------------
+.. automodule:: proj.settings
+   :members:
+.. automodule:: proj.wsgi
+   :members:

@@ -1,0 +1,74 @@
+[
+{
+    "pk": 1, 
+    "model": "app.comment", 
+    "fields": {
+        "rating": "2", 
+        "primer": "CAC", 
+        "text": "better than nothing"
+    }
+},
+{
+    "pk": 2, 
+    "model": "app.comment", 
+    "fields": {
+        "rating": "2", 
+        "primer": "CAG", 
+        "text": "lukewarm on this one"
+    }
+},
+{
+    "pk": 3, 
+    "model": "app.comment", 
+    "fields": {
+        "rating": "4", 
+        "primer": "CAC", 
+        "text": "almost the best"
+    }
+},
+{
+    "pk": 4, 
+    "model": "app.comment", 
+    "fields": {
+        "rating": "5", 
+        "primer": "CAC", 
+        "text": "the best ever, the best ever, the best ever, the best ever, the best ever, the best ever, the best ever, the best ever, the best ever, the best ever, the best ever, the best ever, the best ever, the best ever,"
+    }
+},
+{
+    "pk": 5, 
+    "model": "app.comment", 
+    "fields": {
+        "rating": "2", 
+        "primer": "CAC", 
+        "text": "lukewarm on this one"
+    }
+},
+{
+    "pk": 6, 
+    "model": "app.comment", 
+    "fields": {
+        "rating": "3", 
+        "primer": "CAG", 
+        "text": "medium"
+    }
+},
+{
+    "pk": 7, 
+    "model": "app.comment", 
+    "fields": {
+        "rating": "1", 
+        "primer": "CAC", 
+        "text": "not the best"
+    }
+},
+{
+    "pk": 8, 
+    "model": "app.comment", 
+    "fields": {
+        "rating": "5", 
+        "primer": "CAG", 
+        "text": "my favorite, my favorite, my favorite, my favorite, my favorite, my favorite, my favorite, my favorite, my favorite, my favorite, my favorite, my favorite, my favorite, my favorite,"
+    }
+}
+]

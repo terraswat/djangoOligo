@@ -1,0 +1,61 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Type" CONTENT="text/html;CHARSET=UTF-8">
+		<meta name="description" content="Satellite Oligos">
+		<meta name="keywords" content="genomics, genome, human genome, UCSC, bioinformatics">
+		<title>SatOligo Help</title>
+
+		<!-- CSS INCLUDES -->
+		<link rel="stylesheet" type="text/css" href="{% static 'css/fontsColors.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/app.css' %}" />
+
+	</head>
+	<body id='help'>
+		<h1>UCSC Satellite Oligos Information</h1>
+		<p>This application was developed by the <a href='https://genomics.soe.ucsc.edu/'>UC Santa Cruz Genomics Institute</a>.
+		<h2>Oligo attributes</h2>
+		<table>
+			<tr><th>
+			Label
+			</th><th>
+			Description
+			</th></tr>
+			<tr><td>
+			Primer (5'->3')</td><td>
+			unique primer (5'->3')</td></tr><tr><td>
+			Rating</td><td>
+			rating by Users</td></tr><tr><td>
+			Satellite Family</td><td>
+			satellite family</td></tr><tr><td>
+			Array Name</td><td>
+			satellite array nomenclature</td></tr><tr><td>
+			Frequency</td><td>
+			frequency observed</td></tr><tr><td>
+			Chr</td><td>
+			human Chromosome</td></tr><tr><td>
+			Best Start</td><td>
+			human Chromosome Start Coordinate for Best Hit</td></tr><tr><td>
+			Best End</td><td>
+			human Chromosome End Coordinate for Best Hit</td></tr><tr><td>
+			?</td><td>
+			low stringency chromosome assignments</td></tr><tr><td>
+			View in Genome Browser</td><td>
+			UCSC Genome Browser link, may not exist</td></tr><tr><td>
+			Population</td><td>
+			human population</td></tr><tr><td>
+			<!-- Journal Citation</td><td>
+			journal citation, may not exist</td></tr><tr><td> -->
+			Comments</td><td>
+			comments by users
+			</td></tr>
+		</table>
+		<h2 style='padding-top:0.8em'>Populations and Samples</h2>
+		<p>Samples are from the <a href='http://www.1000genomes.org'>1000 Genomes Project</a>
+			where you can find <a href='http://www.1000genomes.org/about#ProjectSamples'>details about the samples and populations</a>.</p>
+		<br>
+        <a href='http://satoligo.soe.ucsc.edu/docs'>Developer Documentation</a>
+	</body>
+</html>

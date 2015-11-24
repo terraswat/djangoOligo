@@ -1,0 +1,74 @@
+[
+{
+    "pk": 1, 
+    "model": "app.population", 
+    "fields": {
+        "count": "44", 
+        "primer": "CAC", 
+        "name": "LWK"
+    }
+},
+{
+    "pk": 2, 
+    "model": "app.population", 
+    "fields": {
+        "count": "88", 
+        "primer": "CAG", 
+        "name": "YRI"
+    }
+},
+{
+    "pk": 3, 
+    "model": "app.population", 
+    "fields": {
+        "count": "33", 
+        "primer": "CAC", 
+        "name": "YRI"
+    }
+},
+{
+    "pk": 4, 
+    "model": "app.population", 
+    "fields": {
+        "count": "77", 
+        "primer": "CAG", 
+        "name": "LWK"
+    }
+},
+{
+    "pk": 5, 
+    "model": "app.population", 
+    "fields": {
+        "count": "99", 
+        "primer": "CAC", 
+        "name": "PJL"
+    }
+},
+{
+    "pk": 6, 
+    "model": "app.population", 
+    "fields": {
+        "count": "11", 
+        "primer": "CAG", 
+        "name": "PJL"
+    }
+},
+{
+    "pk": 7, 
+    "model": "app.population", 
+    "fields": {
+        "count": "22", 
+        "primer": "CAC", 
+        "name": "JPT"
+    }
+},
+{
+    "pk": 8, 
+    "model": "app.population", 
+    "fields": {
+        "count": "55", 
+        "primer": "CAG", 
+        "name": "JPT"
+    }
+}
+]

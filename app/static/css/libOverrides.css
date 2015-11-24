@@ -1,0 +1,67 @@
+/* dataTable overrides */
+table.dataTable thead th, table.dataTable thead td {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 18px;
+	text-align: left;
+	border-top: 1px solid;
+	border-right: 1px solid;
+	font-weight: normal;
+}
+table.dataTable thead th:first-child, table.dataTable thead td:first-child {
+	border-left: 1px solid;
+}
+table.dataTable tbody th, table.dataTable tbody td {
+	padding: 3px 5px;
+}
+/* jquery-ui overrides */
+.ui-button-text-only .ui-button-text {
+	padding: 0.1em 0.4em;
+}
+
+/* select2 overrides */
+.select2-default {
+    color: #000 !important;
+}
+.select2-container .select2-choice > .select2-chosen {
+	margin-right: 20px;
+}
+.select2-container .select2-choice .select2-arrow {
+	background-image: none;
+	background-color: transparent;
+	border-left-width: 0;
+}
+.select2-container {
+	/*margin-top: -1px;*/
+	padding-bottom: 1px;
+}
+.select2-container .select2-choice {
+	/*font-size: .0.8em;*/
+	height: 1.4em;
+	line-height: 1.4em;
+	padding-left: 5px;
+	color: #000000;
+}
+.select2-container .select2-choice .select2-arrow b {
+	margin-top: -4px;
+	height: 16px;
+}
+.select2-search input {
+	font-size: 0.9em;
+}
+.select2-results {
+	margin: 0;
+	padding-left: 0;
+	line-height: 1.6em;
+}
+.select2-results .select2-result-label,
+.select2-no-results {
+	padding: 0 5px;
+	white-space: nowrap;
+}
+.select2-results .select2-result-label,
+.select2-match {
+	height: 1.6em;
+	line-height: 1.6em;
+}

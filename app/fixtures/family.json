@@ -1,0 +1,16 @@
+[
+{
+    "fields": {
+        "name": "Alpha Satellite", 
+        "descr": "Alpha Satellite descr"
+    }, 
+    "model": "app.family"
+},
+{
+    "fields": {
+        "name": "Beta Satellite", 
+        "descr": "Beta Satellite descr"
+    }, 
+    "model": "app.family"
+}
+]

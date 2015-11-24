@@ -1,0 +1,67 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Type" CONTENT="text/html;CHARSET=UTF-8">
+		<meta name="description" content="Satellite Oligos">
+		<meta name="keywords" content="genomics, genome, human genome, UCSC, bioinformatics">
+		<title>SatOligo</title>
+
+		<!-- CSS INCLUDES -->
+		<link rel="stylesheet" type="text/css" href="{% static 'css/lib/jquery.dataTables.min.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/lib/jquery-ui.min.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/lib/select2.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/libOverrides.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/fontsColors.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/app.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/comments.css' %}" />
+
+	</head>
+	<body>
+		<h1 id='title'>UCSC<br>Satellite<br>Oligos</h1>
+
+		<!-- SEARCH -->
+		<div ID='search'>
+			{% include "app/search.html" %}
+		</div>
+
+		<!-- OLIGOS -->
+		<div id='oligos'>
+			<h2>Select a row</h2>
+			<span class='stats'>XX displayed of YYY found of ZZ,ZZZ in database</span>
+			<table id="oligoTable" class="display" cellspacing="0" width="100%"></table>
+		</div>
+
+		<!-- GENOME BROWSER -->
+		<div id='genomeBrowser'>
+			<a target='_blank' href='
+				https://genome.ucsc.edu/cgi-bin/hgTracks?hgS_doOtherUser=submit&hgS_otherUserName=khmiga&hgS_otherUserSessionName=alphaTracks_hg19 '>
+				View in Genome Browser
+			</a>
+		</div>
+		
+		<!-- POPULATIONS -->
+		<div ID='populations'>
+			{% include "app/populations.html" %}
+		</div>
+
+		<!-- COMMENTS -->
+		<div ID='comments'>
+			{% include "app/comments.html" %}
+		</div>
+
+		<!-- JAVASCRIPT INCLUDES -->
+		<script type="text/javascript" src="{% static 'js/lib/jquery-2.1.1.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/lib/underscore.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/lib/jquery.dataTables.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/lib/jquery-ui.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/lib/select2.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/search.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/oligo.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/population.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/comment.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+
+	</body>
+</html>

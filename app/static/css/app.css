@@ -1,0 +1,140 @@
+body {
+	padding: 10px;
+}
+table {
+	border-collapse: collapse;
+}
+h1, h2, h3, h4, th {
+	font-weight: normal;
+}
+h1 {
+	font-size: 2em;
+	vertical-align: top;
+	text-align: right;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	padding-right: 20px;
+	display: inline-block;
+}
+#title {
+	float: right;
+}
+h2 {
+	font-size: 1.3em;
+	margin-top: 0;
+	margin-bottom: 0.1em;
+}
+input,
+textarea {
+	padding: 2px 4px;
+}
+#search,
+#oligos,
+#genomeBrowser,
+#populations,
+#comments,
+#comments .createButton,
+#comments .addBlock,
+#comments .error {
+	display: none;
+}
+
+/* SEARCH */
+#search h2 {
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 0;
+}
+#search th {
+	text-align: right;
+	padding-right: 0.5em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+}
+#search td {
+	padding-top: 0.2em;
+}
+/*
+#search .family {
+	width: 15em;
+}
+#search .chr {
+	width: 2em;
+}
+#search .primerHelp {
+	font-size: 0.9em;
+	padding-left: 0.1em;
+}
+*/
+#help,
+#search .button {
+	margin-top: 5px;
+}
+#help th {
+	font-size: 1.2em;
+}
+#help th:last-child {
+	text-align: left;
+}
+#help th:first-child,
+#help td:first-child {
+	text-align: right;
+	padding-right: 1em;
+}
+
+/* OLIGOS */
+#oligos h2 {
+	margin-top: -0.8em;
+	margin-bottom: 0.2em;
+	display: inline-block;
+}
+#oligos .stats {
+	font-size: 0.8em;
+	float: right;
+	margin-right: 1em;
+}
+table.dataTable tbody th:nth-child(2),
+table.dataTable tbody td:nth-child(2) {
+	font-size: 2.5em;
+	line-height: 0.01em;
+	padding-top: 0.55em;
+}
+
+/* GENOME BROWSER */
+#genomeBrowser {
+	font-size: 1.3em;
+	padding-top: 0.8em;
+}
+
+/* POPULATIONS */
+#populations {
+	margin-top: 1em;
+}
+#populations table {
+	border-bottom: 1px solid;
+}
+#populations th {
+	padding: 0.2em 0.4em;
+	border: 1px solid;
+}
+#populations td {
+	text-align: center;
+}
+#populations th:first-child  {
+	font-size: 1.2em;
+}
+#populations td:first-child {
+	font-size: 1em;
+}
+
+/* HELP */
+#help h1 {
+	margin-top: .2em;
+}
+#help h3 {
+	margin: .2em;
+}
+#help body {
+	padding: 0 20px;
+}
+

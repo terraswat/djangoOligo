@@ -1,0 +1,48 @@
+
+/* STATIC FONT */
+body {
+	font-size: 1em;
+}
+body,
+textarea,
+.ui-widget {
+	font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+}
+
+/* DATA FONT */
+input,
+.select2-container .select2-choice,
+.select2-search input,
+.select2-results .select2-result-label,
+.select2-no-results,
+#oligoTable,
+#populations td,
+#comments .table td {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 0.8em;
+}
+
+/* RATING FONT */
+table.dataTable tbody th:nth-child(2),
+table.dataTable tbody td:nth-child(2),
+#comments .select2-container .select2-choice,
+.ratingDropDown .select2-results .select2-result-label,
+.ratingDropDown .select2-no-results,
+#comments .table th {
+	font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+}
+
+/* COLORS */
+#populations td,
+#comments th,
+table.dataTable tbody tr.selected td,
+table.dataTable.display tbody tr:hover.selected>.sorting_1, table.dataTable.display tbody tr.odd:hover.selected>.sorting_1, table.dataTable.display tbody tr.even:hover.selected>.sorting_1, table.dataTable.order-column.hover tbody tr:hover.selected>.sorting_1, table.dataTable.order-column.hover tbody tr.odd:hover.selected>.sorting_1, table.dataTable.order-column.hover tbody tr.even:hover.selected>.sorting_1,
+table.dataTable.display tbody tr.even.selected>.sorting_1, table.dataTable.order-column.stripe tbody tr.even.selected>.sorting_1,
+table.dataTable.display tbody tr.odd.selected>.sorting_1, table.dataTable.order-column.stripe tbody tr.odd.selected>.sorting_1 {
+	background-color: #c6e1ff; /* blue - Selected oligo row & everything we know about it */
+}
+table.dataTable tbody tr:hover:not(.selected) td,
+table.dataTable.display tbody tr:hover:not(.selected)>.sorting_1, table.dataTable.display tbody tr.odd:hover:not(.selected)>.sorting_1, table.dataTable.display tbody tr.even:hover:not(.selected)>.sorting_1, table.dataTable.order-column.hover tbody tr:hover:not(.selected)>.sorting_1, table.dataTable.order-column.hover tbody tr.odd:hover:not(.selected)>.sorting_1, table.dataTable.order-column.hover tbody tr.even:hover:not(.selected)>.sorting_1,
+table.dataTable.display tbody tr:hover:not(.selected).selected>.sorting_1, table.dataTable.display tbody tr.odd:hover:not(.selected).selected>.sorting_1, table.dataTable.display tbody tr.even:hover:not(.selected).selected>.sorting_1, table.dataTable.order-column.hover tbody tr:hover:not(.selected).selected>.sorting_1, table.dataTable.order-column.hover tbody tr.odd:hover:not(.selected).selected>.sorting_1, table.dataTable.order-column.hover tbody tr.even:hover:not(.selected).selected>.sorting_1 {
+	background-color: #bbe63f; /* green - hover. same as jquery-ui theme */
+}

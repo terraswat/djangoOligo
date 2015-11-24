@@ -1,0 +1,9 @@
+primer	family	array	frequency	chr	bestStart	bestEnd	location	genomeBrowser
+CAC	Alpha Satellite	D125DV	0.33	10	23456789	123456789	location sf	/CAC
+CAG	Beta Satellite	X355XD	0.44	11	34567891	234567891	location sc	/CAG
+CAT	Alpha Satellite	G250GZ	0.55	10	45678912	345678912	location sc	/CAT
+GAG	Alpha Satellite	D125DV	0.11	11	56789123	456789123	location sf	/GAG
+GAT	Beta Satellite	X355XD	0.99	10	67891234	567891234	location sc	/GAT
+TAC	Alpha Satellite	G250GZ	0.66	11	78912345	678912345	location sf	/TAC
+TAG	Alpha Satellite	D125DV	0.88	11	89123456	789123456	location sc	/TAG
+TAT	Beta Satellite	Z433ZT	0.77	11	91234567	891234567	location sc	/TAT

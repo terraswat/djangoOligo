@@ -1,0 +1,15 @@
+name	group	count	order	descr
+CHB	EAS: East Asian Ancestry	97	1	Han Chinese in Bejing, China
+JPT	EAS: East Asian Ancestry	89	2	Japanese in Tokyo, Japan
+CHS	EAS: East Asian Ancestry	100	3	Southern Han Chinese, China
+ASQ	AFR: African Ancestry	61	4	African Ancestry in Southwest US
+LWK	AFR: African Ancestry	97	5	Luhya in Webuye, Kenya
+YRI	AFR: African Ancestry	88	6	Yoruba in Ibadan, Nigeria
+GBR	EUR: European Ancestry	89	7	British in England and Scotland
+FIN	EUR: European Ancestry	93	8	Finnish in Finland
+IBS	EUR: European Ancestry	14	9	Iberian populations in Spain
+TSI	EUR: European Ancestry	98	10	Toscani in Italy
+CEU	EUR: European Ancestry	85	11	Utah residents with Northern and Western European ancestry
+CLM	AMR: Americas Ancestry	60	12	Colombian in Medellin, Colombia
+MXL	AMR: Americas Ancestry	66	13	Mexican Ancestry in Los Angeles, California
+PUR	AMR: Americas Ancestry	55	14	Puerto Rican in Puerto Rico

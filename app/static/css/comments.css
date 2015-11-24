@@ -1,0 +1,54 @@
+#comments h2 {
+	display: inline-block;
+	margin-top: 1em;
+	margin-bottom: 0.2em;
+}
+#comments .createButton {
+	margin-left: 3em;
+	margin-bottom: 0.2em;
+}
+#comments .addBlock td:first-child {
+	text-align: right;
+	vertical-align: bottom;
+	padding-right: 0.4em;
+}
+#comments .rateLabel {
+	min-width: 7em;
+	padding-bottom: 0.3em;
+}
+#comments .select2-container {
+	padding-bottom: 0.4em;
+}
+.ratingDropDown .select2-results {
+	line-height: 0.8em;
+	overflow-y: hidden;
+}
+#comments .select2-container .select2-choice,
+.ratingDropDown .select2-results .select2-result-label,
+.ratingDropDown .select2-no-results {
+	font-size: 2em;
+	line-height: 0.8em;
+	min-height: 0.5em;
+	height: 0.3em;
+	padding-top: 0.1em;
+	vertical-align: top;
+}
+
+#comments textarea.textInput {
+	font-size: 1em;
+	width: 100%;
+}
+#comments .table th {
+	font-size: 2em;
+	line-height: 0.01em;
+	padding-top: 0.55em;
+	vertical-align: top;
+	text-align: right;
+}
+#comments .table td {
+	font-size: 0.9em;
+	padding-top: 4px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+}
+

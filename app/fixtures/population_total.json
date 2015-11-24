@@ -1,0 +1,142 @@
+[
+{
+    "fields": {
+        "count": "97", 
+        "group": "EAS: East Asian Ancestry", 
+        "name": "CHB", 
+        "descr": "Han Chinese in Bejing, China", 
+        "order": "1"
+    }, 
+    "model": "app.population_total"
+},
+{
+    "fields": {
+        "count": "89", 
+        "group": "EAS: East Asian Ancestry", 
+        "name": "JPT", 
+        "descr": "Japanese in Tokyo, Japan", 
+        "order": "2"
+    }, 
+    "model": "app.population_total"
+},
+{
+    "fields": {
+        "count": "100", 
+        "group": "EAS: East Asian Ancestry", 
+        "name": "CHS", 
+        "descr": "Southern Han Chinese, China", 
+        "order": "3"
+    }, 
+    "model": "app.population_total"
+},
+{
+    "fields": {
+        "count": "61", 
+        "group": "AFR: African Ancestry", 
+        "name": "ASQ", 
+        "descr": "African Ancestry in Southwest US", 
+        "order": "4"
+    }, 
+    "model": "app.population_total"
+},
+{
+    "fields": {
+        "count": "97", 
+        "group": "AFR: African Ancestry", 
+        "name": "LWK", 
+        "descr": "Luhya in Webuye, Kenya", 
+        "order": "5"
+    }, 
+    "model": "app.population_total"
+},
+{
+    "fields": {
+        "count": "88", 
+        "group": "AFR: African Ancestry", 
+        "name": "YRI", 
+        "descr": "Yoruba in Ibadan, Nigeria", 
+        "order": "6"
+    }, 
+    "model": "app.population_total"
+},
+{
+    "fields": {
+        "count": "89", 
+        "group": "EUR: European Ancestry", 
+        "name": "GBR", 
+        "descr": "British in England and Scotland", 
+        "order": "7"
+    }, 
+    "model": "app.population_total"
+},
+{
+    "fields": {
+        "count": "93", 
+        "group": "EUR: European Ancestry", 
+        "name": "FIN", 
+        "descr": "Finnish in Finland", 
+        "order": "8"
+    }, 
+    "model": "app.population_total"
+},
+{
+    "fields": {
+        "count": "14", 
+        "group": "EUR: European Ancestry", 
+        "name": "IBS", 
+        "descr": "Iberian populations in Spain", 
+        "order": "9"
+    }, 
+    "model": "app.population_total"
+},
+{
+    "fields": {
+        "count": "98", 
+        "group": "EUR: European Ancestry", 
+        "name": "TSI", 
+        "descr": "Toscani in Italy", 
+        "order": "10"
+    }, 
+    "model": "app.population_total"
+},
+{
+    "fields": {
+        "count": "85", 
+        "group": "EUR: European Ancestry", 
+        "name": "CEU", 
+        "descr": "Utah residents with Northern and Western European ancestry", 
+        "order": "11"
+    }, 
+    "model": "app.population_total"
+},
+{
+    "fields": {
+        "count": "60", 
+        "group": "AMR: Americas Ancestry", 
+        "name": "CLM", 
+        "descr": "Colombian in Medellin, Colombia", 
+        "order": "12"
+    }, 
+    "model": "app.population_total"
+},
+{
+    "fields": {
+        "count": "66", 
+        "group": "AMR: Americas Ancestry", 
+        "name": "MXL", 
+        "descr": "Mexican Ancestry in Los Angeles, California", 
+        "order": "13"
+    }, 
+    "model": "app.population_total"
+},
+{
+    "fields": {
+        "count": "55", 
+        "group": "AMR: Americas Ancestry", 
+        "name": "PUR", 
+        "descr": "Puerto Rican in Puerto Rico", 
+        "order": "14"
+    }, 
+    "model": "app.population_total"
+}
+]
