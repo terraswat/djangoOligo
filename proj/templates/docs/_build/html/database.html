@@ -25,7 +25,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="SatOligo 1.0 documentation" href="docs.html" />
     <link rel="next" title="Server Code" href="server.html" />
-    <link rel="prev" title="Requirements" href="requirements.html" /> 
+    <link rel="prev" title="Introduction" href="intro.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -41,7 +41,7 @@
           <a href="server.html" title="Server Code"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="requirements.html" title="Requirements"
+          <a href="intro.html" title="Introduction"
              accesskey="P">previous</a> |</li>
         <li><a href="docs.html">SatOligo 1.0 documentation</a> &raquo;</li> 
       </ul>
@@ -57,9 +57,13 @@
 <p>Schema:
 See the Django model at djangoOligo/app/models.py or view the actual data in
 mySql.</p>
-<p>Load new data by updating the json file at djangoOligo/app/fixtures/oligo.json
-and using the django manager to load it with:</p>
+<p>Load new data by creating a json or tsv file for the database table of interest.
+Example data files and a tsv-to-json converter (tsv2json.py) are at
+djangoOligo/app/fixtures.</p>
+<p>The json file may then be loaded into the database using a django utility:</p>
 <div class="highlight-python"><div class="highlight"><pre>python manage.py loaddata oligo.json
+
+TBD: executed from which directory?
 </pre></div>
 </div>
 </div>
@@ -71,8 +75,8 @@ and using the django manager to load it with:</p>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="requirements.html"
-                        title="previous chapter">Requirements</a></p>
+  <p class="topless"><a href="intro.html"
+                        title="previous chapter">Introduction</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="server.html"
                         title="next chapter">Server Code</a></p>
@@ -113,7 +117,7 @@ and using the django manager to load it with:</p>
           <a href="server.html" title="Server Code"
              >next</a> |</li>
         <li class="right" >
-          <a href="requirements.html" title="Requirements"
+          <a href="intro.html" title="Introduction"
              >previous</a> |</li>
         <li><a href="docs.html">SatOligo 1.0 documentation</a> &raquo;</li> 
       </ul>

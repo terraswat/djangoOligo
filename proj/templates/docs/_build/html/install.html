@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Installation &mdash; SatOligo 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="SatOligo 1.0 documentation" href="docs.html" />
+    <link rel="prev" title="Deployment" href="deploy.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="deploy.html" title="Deployment"
+             accesskey="P">previous</a> |</li>
+        <li><a href="docs.html">SatOligo 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>The application is up and running. These instructions may be used to install on another machine.</p>
+<div class="section" id="required-toolchain">
+<h2>Required Toolchain<a class="headerlink" href="#required-toolchain" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>python v2.6</li>
+<li>mysql v5.1.73</li>
+<li>apache v2.2</li>
+<li>django v1.6</li>
+</ul>
+<p>The <a class="reference external" href="https://docs.djangoproject.com/en/1.6/">django documention</a> has all of the information needed to
+install the above.</p>
+<p>Install sphinx v1.2.3 to modify this documentation.</p>
+</div>
+<div class="section" id="install-notes-for-centos-vm">
+<h2>Install notes for CentOS VM<a class="headerlink" href="#install-notes-for-centos-vm" title="Permalink to this headline">¶</a></h2>
+<p>VERSIONS:</p>
+<ul>
+<li><dl class="first docutils">
+<dt>our standard VM install has python2.6, apache2.2, mysql5.1.73</dt>
+<dd><ul class="first last simple">
+<li>Django1.6 supports the above, but Django1.7 needs python2.7, so we&#8217;ll go with Django1.6</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>PACKAGES THAT SOE SYS-ADMIN INSTALLS:</p>
+<ul>
+<li><dl class="first docutils">
+<dt>look for required packages with:</dt>
+<dd><ul class="first last simple">
+<li>rpm -qa</li>
+<li>yum list</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>required packages:</dt>
+<dd><ul class="first last simple">
+<li>mysql-devel (for sql client)</li>
+<li>zlib-devel (for sql client)</li>
+<li>pip install mod_wsgi</li>
+<li>pip install Django==1.6.8</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>HTTP:</p>
+<ul>
+<li><dl class="first docutils">
+<dt>Important files:</dt>
+<dd><ul class="first last simple">
+<li>/etc/httpd/conf/httpd.conf</li>
+<li>/etc/httpd/conf.d/wsgi.conf</li>
+<li>/var/log/httpd/error_log</li>
+<li>/etc/httpd/modules/</li>
+<li>/etc/httpd/conf.d</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">/etc/httpd/conf.d/wsgi.conf:</p>
+<div class="highlight-python"><div class="highlight"><pre>Alias /robots.txt /data/www/djangoOligo/static/robots.txt
+Alias /favicon.ico /data/www/djangoOligo/static/favicon.ico
+
+Alias /media/ /data/www/djangoOligo/media/
+Alias /static/ /data/www/djangoOligo/static/
+
+&lt;Directory /data/www/djangoOligo/static&gt;
+Order deny,allow
+Allow from all
+&lt;/Directory&gt;
+
+&lt;Directory /data/www/djangoOligo/media&gt;
+Order deny,allow
+Allow from all
+&lt;/Directory&gt;
+
+WSGIScriptAlias / /data/www/djangoOligo/proj/wsgi.py
+WSGIPythonPath /data/www/djangoOligo
+
+&lt;Directory /data/www/djangoOligo/proj&gt;
+Options Indexes FollowSymLinks
+&lt;Files wsgi.py&gt;
+Order deny,allow
+Allow from all
+&lt;/Files&gt;
+&lt;/Directory&gt;
+</pre></div>
+</div>
+</li>
+<li><p class="first">/data/www/djangoOligo/proj/wsgi.py:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">&#39;/data/www/djangoOligo/proj&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>DJANGO:</p>
+<ul>
+<li><p class="first">set STATIC settings in proj/settings.py</p>
+</li>
+<li><p class="first">djangoOligo/deploy.py:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">fabric.api</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="c"># Hosts to deploy onto</span>
+<span class="n">env</span><span class="o">.</span><span class="n">hosts</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;satoligo.soe.ucsc.edu&#39;</span><span class="p">]</span>
+<span class="c"># Where your project code lives on the server</span>
+<span class="n">env</span><span class="o">.</span><span class="n">project_root</span> <span class="o">=</span> <span class="s">&#39;/data/www/djangoOligo&#39;</span>
+<span class="k">def</span> <span class="nf">deploy_static</span><span class="p">():</span>
+        <span class="k">with</span> <span class="n">cd</span><span class="p">(</span><span class="n">env</span><span class="o">.</span><span class="n">project_root</span><span class="p">):</span>
+                <span class="n">run</span><span class="p">(</span><span class="s">&#39;./manage.py collectstatic -v0 --noinput&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>mySQL CLIENT:</p>
+<ul>
+<li><p class="first">MySQL-devel to compile</p>
+</li>
+<li><p class="first">zlib-devel to compile</p>
+</li>
+<li><p class="first">build and install:</p>
+<div class="highlight-python"><div class="highlight"><pre>python setup.py build &amp;&gt; build.log
+python setup.py install &amp;&gt; install.log
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="docs.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Installation</a><ul>
+<li><a class="reference internal" href="#required-toolchain">Required Toolchain</a></li>
+<li><a class="reference internal" href="#install-notes-for-centos-vm">Install notes for CentOS VM</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="deploy.html"
+                        title="previous chapter">Deployment</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/install.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="deploy.html" title="Deployment"
+             >previous</a> |</li>
+        <li><a href="docs.html">SatOligo 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2014, UCSC Genomics Institute.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3b2.
+    </div>
+  </body>
+</html>

@@ -1,6 +1,10 @@
 Current Development State
 =========================
 
+The code repository is at:
+
+ | `https://github.com/ucscHexmap/ucscSatOligo <https://github.com/ucscHexmap/ucscSatOligo>`_
+ 
 To make this application usable, a few things need to be done, outlined here.
 
 **Load the Data**
