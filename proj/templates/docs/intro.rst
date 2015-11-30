@@ -28,5 +28,6 @@ Important URLs:
  | `http://satoligo.soe.ucsc.edu/app <http://satoligo.soe.ucsc.edu/app>`_ : web application
  | `http://satoligo.soe.ucsc.edu/admin <http://satoligo.soe.ucsc.edu/admin>`_ : admin pages
  | `http://satoligo.soe.ucsc.edu/docs <http://satoligo.soe.ucsc.edu/docs>`_ : this documentation
+ | `https://github.com/ucscHexmap/ucscSatOligo <https://github.com/ucscHexmap/ucscSatOligo>`_ : code repository
 
 

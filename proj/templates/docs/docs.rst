@@ -12,13 +12,14 @@ Contents:
    :maxdepth: 2
 
    intro
-   requirements
    database
    server
    client
    admin
    devState
    documentation
+   deploy
+   install
 
 Indices and tables
 ==================
