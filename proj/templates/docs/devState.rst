@@ -1,20 +1,28 @@
-Current Development State
-=========================
+Modifications
+=============
 
 The code repository is at:
 
  | `https://github.com/ucscHexmap/ucscSatOligo <https://github.com/ucscHexmap/ucscSatOligo>`_
- 
-To make this application usable, a few things need to be done, outlined here.
 
-**Load the Data**
+The code at /data/www/djangoOligo is a clone of the repository. For minor
+changes where you are feeling lucky, the code could be changed on the production
+server. You always have the repository version to fall back to.
 
-Load oligo data using the django utility and json file::
+For more extensive changes, you probably want to have another clone in a development
+environment to keep the production database clean and not interrupt service from
+the production site.
 
- python manage.py loaddata oligo.json
+Current Development State
+^^^^^^^^^^^^^^^^^^^^^^^^^
+To make this application usable, a few things need to be done, outlined in the
+sections below.
 
-**Too Much Data to Display**
+Load the Data
+-------------
 
+Too Much Data to Display
+------------------------
 The query to the server currently returns ALL data matching the search criteria.
 This won't work for lots of data. The Datatables widget which shows the search
 results can do 'infinite scrolling' or paging, neither of which our code has
@@ -44,20 +52,20 @@ http://datatables.net/
     |     change viewport | rowRetrieveMax | resize             |
     +---------------------+----------------+--------------------+
 
-**Genome Browser Link**
-
+Genome Browser Link
+-------------------
 The genome browser link should be grayed-out when there is no actual link
 to be constructed
 
 Client should prefix genomeBrowser when updating the link upon oligo selection?
-(I don't remember what I meant by this)
+(What did I meant by this?)
 
-**Advertize the Site**
-
+Advertize the Site
+------------------
 Tell search engines to search this app by updating proj/static/robots.txt
 
-**Handy Django Utilities**
-
+Handy Django Utilities
+----------------------
 	- python manage.py shell
 	- python manage.py syncdb
 	- python manage.py sql app (optional)

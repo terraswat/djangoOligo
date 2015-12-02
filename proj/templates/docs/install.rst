@@ -9,14 +9,13 @@ Required Toolchain
 * python v2.6
 * mysql v5.1.73
 * apache v2.2
-* django v1.6
+* django v1.6 (limited by python v2.6)
+* sphinx v1.3b2 or later for building this documentation
 
 The `django documention`_ has all of the information needed to
 install the above.
 
 .. _django documention: https://docs.djangoproject.com/en/1.6/
-
-Install sphinx v1.2.3 to modify this documentation.
 
 Install notes for CentOS VM
 ---------------------------

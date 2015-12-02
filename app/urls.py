@@ -45,8 +45,4 @@ urlpatterns = patterns('',
     # /app/help/
     # help page
     url(r'^help/$', views.help, name='help'),
-
-    # /app/docs/
-    # docs page
-    url(r'^docs/$', views.help, name='docs'),
 )

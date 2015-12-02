@@ -1,5 +1,6 @@
-Project modules
----------------
+Server: Project modules
+-----------------------
+
 .. automodule:: proj.settings
 .. automodule:: proj.wsgi
 
