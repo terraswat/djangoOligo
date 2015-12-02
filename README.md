@@ -1,1 +1,1 @@
-# ucscSatOligo
+# djangoOligo: UCSC Satellite Oligos

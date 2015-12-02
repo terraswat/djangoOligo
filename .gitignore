@@ -1,4 +1,6 @@
 backup.py
 *.pyc
 migrations
+./static/*
+./proj/templates/docs/_build
 
