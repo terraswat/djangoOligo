@@ -1,6 +1,9 @@
 """
 Django settings for proj project.
 
+For production, comment out the sections: DEV, uncomment the sections: PRODUCTION
+For local development, comment out the sections: PRODUCTION, uncomment the sections: DEV
+
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
 
@@ -18,7 +21,12 @@ TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'proj/templates')]
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+# PRODUCTION:
 SECRET_KEY = 'dh64rv632oqrv-ot&7)j-i9ghp*_h@#t3f*dwv^&28!!=@#4pb'
+
+# DEV:
+#SECRET_KEY = 'jzrs#c#8n&+9c-n=#cr8pt7hmv2h0b$0o9@v-+or7#z*xjxl^l'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -59,18 +67,17 @@ WSGI_APPLICATION = 'proj.wsgi.application'
 
 DATABASES = {
     'default': {
-	'ENGINE': 'django.db.backends.mysql',
-	'PORT': '',
-	'USER': 'django',
+        'ENGINE': 'django.db.backends.mysql',
+        'PORT': '',
+        'USER': 'django',
+        'HOST': 'localhost',
 
-	# production environment:
-	'NAME': 'django',
-	'PASSWORD': 'iWishIwas',
-	'HOST': 'localhost',
+        # PRODUCTION:
+        'NAME': 'django',
+        'PASSWORD': 'iWishIwas',
 
-	# dev environment:
-	#'NAME': 'oligo',
-	#'HOST': '127.0.0.1',
+        # DEV:
+        #'NAME': 'oligo',
     }
 }
 
