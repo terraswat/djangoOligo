@@ -86,17 +86,17 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/satOligo.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/UCSCSatelliteOligos.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/satOligo.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/UCSCSatelliteOligos.qhc"
 
 devhelp:
 	$(SPHINXBUILD) -b devhelp $(ALLSPHINXOPTS) $(BUILDDIR)/devhelp
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/satOligo"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/satOligo"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/UCSCSatelliteOligos"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/UCSCSatelliteOligos"
 	@echo "# devhelp"
 
 epub:

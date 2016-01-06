@@ -1,5 +1,5 @@
-Application modules
--------------------
+Server: Application modules
+---------------------------
 
 .. automodule:: app.admin
 .. automodule:: app.models

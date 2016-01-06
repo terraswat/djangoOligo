@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-# satOligo documentation build configuration file, created by
-# sphinx-quickstart on Sun Dec 28 15:50:06 2014.
+# UCSC Satellite Oligos documentation build configuration file, created by
+# sphinx-quickstart on Tue Dec  1 14:26:31 2015.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -19,9 +19,7 @@ import os
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
-sys.path.insert(0, os.path.abspath('../../..'))
-sys.path.insert(0, os.path.abspath('../../../app'))
-sys.path.insert(0, os.path.abspath('../../../app/static/js'))
+sys.path.insert(0, '/Users/swat/oligo/djangoOligo')
 
 # -- General configuration ------------------------------------------------
 
@@ -48,8 +46,8 @@ source_suffix = '.rst'
 master_doc = 'docs'
 
 # General information about the project.
-project = u'SatOligo'
-copyright = u'2014, UCSC Genomics Institute'
+project = u'UCSC Satellite Oligos'
+copyright = u'2015, UC Santa Cruz Genomics Institute'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -198,7 +196,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'satOligodoc'
+htmlhelp_basename = 'UCSCSatelliteOligosdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -220,8 +218,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('docs', 'satOligo.tex', u'satOligo Documentation',
-   u'UCSC Genomics Institute', 'manual'),
+  ('docs', 'UCSCSatelliteOligos.tex', u'UCSC Satellite Oligos Documentation',
+   u'UC Santa Cruz Genomics Institute', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -250,8 +248,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('docs', 'satoligo', u'satOligo Documentation',
-     [u'UCSC Genomics Institute'], 1)
+    ('docs', 'ucscsatelliteoligos', u'UCSC Satellite Oligos Documentation',
+     [u'UC Santa Cruz Genomics Institute'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -264,8 +262,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('docs', 'satOligo', u'satOligo Documentation',
-   u'UCSC Genomics Institute', 'satOligo', 'One line description of project.',
+  ('docs', 'UCSCSatelliteOligos', u'UCSC Satellite Oligos Documentation',
+   u'UC Santa Cruz Genomics Institute', 'UCSCSatelliteOligos', 'One line description of project.',
    'Miscellaneous'),
 ]
 
